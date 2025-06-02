@@ -1,0 +1,102 @@
+/* Стили для поисковой строки */
+.search_container {
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.search_input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search_bottom {
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_bottom:hover {
+  background-color: #e9ecef;
+}
+
+/* Остальные стили */
+.divisions-container {
+  padding: 20px;
+}
+
+.divisions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+  gap: 20px;
+}
+
+.division-card {
+  border: 1px solid black;
+  border-radius: 0;
+  background-color: #FFFFFF;
+  margin: 5px 5px 5px 5px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.division-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+  margin: 5px 5px 5px 5px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card-body p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.details-link {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #d14e15;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.details-link:hover {
+  background-color: #b54512;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.error {
+  color: #dc3545;
+}
