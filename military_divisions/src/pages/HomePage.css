@@ -1,0 +1,68 @@
+.home-container {
+  padding: 20px;
+}
+
+.home-hero {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.home-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-button {
+  margin-top: 1rem;
+}
+
+.districts-container {
+  margin-top: 2rem;
+}
+
+.district-card {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    padding: 1.5rem;
+  }
+  
+  .home-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .home-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .district-card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-hero {
+    padding: 1rem;
+  }
+  
+  .home-hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .districts-container {
+    margin-top: 1rem;
+  }
+}

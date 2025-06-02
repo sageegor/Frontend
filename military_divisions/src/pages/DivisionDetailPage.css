@@ -1,0 +1,98 @@
+.division-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #0066cc;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 5px 0;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.division-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.division-header h1 {
+  margin: 0;
+}
+
+.district-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.division-content {
+  display: flex;
+  gap: 30px;
+}
+
+.division-image {
+  flex: 1;
+  min-width: 0;
+}
+
+.division-image img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.division-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.info-section {
+  margin-bottom: 25px;
+}
+
+.info-section h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .division-content {
+    flex-direction: row;
+  }
+  
+  .division-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .division-image img {
+    height: 100px;
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .division-detail-container {
+    padding: 15px;
+  }
+  
+  .division-header h1 {
+    font-size: 1.8rem;
+  }
+}

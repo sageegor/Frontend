@@ -1,0 +1,68 @@
+/* Общие адаптивные стили */
+.container {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* Адаптивность для DivisionsPage */
+.divisions-grid {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 640px) {
+  .divisions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .divisions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Адаптивность для DivisionDetailPage */
+.division-detail {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .division-detail {
+    flex-direction: row;
+  }
+}
+
+/* Адаптивность для LoginPage */
+.login-form {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .login-form {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-form {
+    width: 50%;
+  }
+}

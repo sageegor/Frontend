@@ -1,0 +1,16 @@
+.footer {
+  background-color: #343a40 !important;
+  border-top: 2px solid #d14e15;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+.mb-0 {
+  color: white;
+}
+
+.mb-0 small text-muted {
+  color: white;
+}

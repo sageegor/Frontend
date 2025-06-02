@@ -1,0 +1,150 @@
+.divisions-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filters-container {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.search_container {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+}
+
+.search_input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search_bottom {
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_bottom:hover {
+  background-color: #e9ecef;
+}
+
+.additional-filters {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-select {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.divisions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.division-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.division-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+  margin-top: 5px;
+  width: auto;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.district-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  font-size: 0.8em;
+  margin: 8px 0;
+}
+
+.details-link {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #d14e15;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.details-link:hover {
+  background-color: #b54512;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.error {
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .divisions-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  }
+  
+  .filters-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .divisions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .search_container {
+    max-width: 100%;
+  }
+  
+  .additional-filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

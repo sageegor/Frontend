@@ -1,0 +1,103 @@
+/* Вариант 1: Bootstrap Spinner */
+.loading-spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.loading-text {
+  margin-top: 1rem;
+  color: #0d6efd;
+  font-weight: 500;
+}
+
+/* Вариант 2: Военный кастомный спиннер */
+.military-spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.military-spinner {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.spinner-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.spinner-segment {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  border-top-color: #d14e15;
+  animation: militarySpin 1s linear infinite;
+}
+
+.spinner-segment:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.spinner-segment:nth-child(2) {
+  animation-delay: -0.3s;
+  border-top-color: #343a40;
+}
+
+.spinner-segment:nth-child(3) {
+  animation-delay: -0.15s;
+  border-top-color: #d14e15;
+}
+
+.spinner-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background-color: #343a40;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.military-loading-text {
+  margin-top: 1.5rem;
+  color: #343a40;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+@keyframes militarySpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
